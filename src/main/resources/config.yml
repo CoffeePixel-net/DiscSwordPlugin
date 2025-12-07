@@ -1,0 +1,324 @@
+# ======================================================
+# DiscSword Plugin Configuration (Updated & Organized)
+# ======================================================
+
+# Default values applied if a disc does not define its own values
+defaults:
+  power: 2
+  duration: 5
+  amplifier: 1
+  distance: 8
+  radius: 5
+
+# ======================================================
+# DISC SETTINGS
+# ======================================================
+# These values customize abilities stats.
+# They do NOT choose which ability activates.
+
+discs:
+  MUSIC_DISC_13:
+    power: 2
+    duration: 5
+    amplifier: 1
+    distance: 8
+    radius: 5
+
+  MUSIC_DISC_CAT:
+    power: 2
+    duration: 5
+    amplifier: 2
+    distance: 10
+    radius: 5
+
+  MUSIC_DISC_BLOCKS:
+    power: 1
+    duration: 5
+    amplifier: 1
+    distance: 6
+    radius: 4
+
+  MUSIC_DISC_CHIRP:
+    power: 1
+    duration: 5
+    amplifier: 1
+    distance: 12
+    radius: 5
+
+  MUSIC_DISC_FAR:
+    power: 2
+    duration: 5
+    amplifier: 1
+    distance: 15
+    radius: 5
+
+  MUSIC_DISC_MALL:
+    power: 1
+    duration: 5
+    amplifier: 1
+    distance: 8
+    radius: 5
+
+  MUSIC_DISC_MELLOHI:
+    power: 2
+    duration: 10
+    amplifier: 1
+    distance: 6
+    radius: 4
+
+  MUSIC_DISC_STAL:
+    power: 1
+    duration: 15
+    amplifier: 1
+    distance: 6
+    radius: 6
+
+  MUSIC_DISC_STRAD:
+    power: 1
+    duration: 5
+    amplifier: 1
+    distance: 5
+    radius: 5
+
+  MUSIC_DISC_WARD:
+    power: 2
+    duration: 6
+    amplifier: 1
+    distance: 5
+    radius: 6
+
+  MUSIC_DISC_11:
+    power: 3
+    duration: 10
+    amplifier: 1
+    distance: 8
+    radius: 5
+
+  MUSIC_DISC_WAIT:
+    power: 1
+    duration: 5
+    amplifier: 1
+    distance: 5
+    radius: 5
+
+  MUSIC_DISC_PIGSTEP:
+    power: 3
+    duration: 5
+    amplifier: 1
+    distance: 6
+    radius: 6
+
+  MUSIC_DISC_OTHERSIDE:
+    power: 2
+    duration: 6
+    amplifier: 1
+    distance: 6
+    radius: 6
+
+  MUSIC_DISC_RELIC:
+    power: 2
+    duration: 3
+    amplifier: 1
+    distance: 5
+    radius: 5
+
+  MUSIC_DISC_CREATOR:
+    power: 2
+    duration: 1
+    amplifier: 2
+    distance: 6
+    radius: 5
+
+  MUSIC_DISC_CREATOR_MUSIC_BOX:
+    power: 2
+    duration: 8
+    amplifier: 1
+    distance: 6
+    radius: 5
+
+  MUSIC_DISC_PRECIPICE:
+    power: 2
+    duration: 5
+    amplifier: 1
+    distance: 6
+    radius: 5
+
+  MUSIC_DISC_LAVA_CHICKEN:
+    power: 2
+    duration: 5
+    amplifier: 1
+    distance: 5
+    radius: 5
+
+  MUSIC_DISC_5:
+    power: 3
+    duration: 5
+    amplifier: 1
+    distance: 10
+    radius: 6
+
+  MUSIC_DISC_TEARS:
+    power: 2
+    duration: 10
+    amplifier: 1
+    distance: 8
+    radius: 5
+
+# ======================================================
+# GLOBAL COOLDOWN (milliseconds)
+# ======================================================
+
+cooldown: 40000
+
+
+# ======================================================
+# MODEL DATA FOR EACH SWORD TEXTURE
+# ======================================================
+
+sword-textures:
+  MUSIC_DISC_13: 1001.0
+  MUSIC_DISC_CAT: 1002.0
+  MUSIC_DISC_BLOCKS: 1003.0
+  MUSIC_DISC_CHIRP: 1004.0
+  MUSIC_DISC_FAR: 1005.0
+  MUSIC_DISC_MALL: 1006.0
+  MUSIC_DISC_MELLOHI: 1007.0
+  MUSIC_DISC_STAL: 1008.0
+  MUSIC_DISC_STRAD: 1009.0
+  MUSIC_DISC_WARD: 1010.0
+  MUSIC_DISC_11: 1011.0
+  MUSIC_DISC_WAIT: 1012.0
+  MUSIC_DISC_PIGSTEP: 1013.0
+  MUSIC_DISC_OTHERSIDE: 1014.0
+  MUSIC_DISC_RELIC: 1015.0
+  MUSIC_DISC_CREATOR: 1016.0
+  MUSIC_DISC_CREATOR_MUSIC_BOX: 1017.0
+  MUSIC_DISC_PRECIPICE: 1018.0
+  MUSIC_DISC_LAVA_CHICKEN: 1019.0
+  MUSIC_DISC_5: 1020.0
+  MUSIC_DISC_TEARS: 1021.0
+
+
+# ======================================================
+# REGISTERED ABILITIES (must match method names)
+# ======================================================
+
+abilities:
+  - lightningDash
+  - windDash
+  - barrierShield
+  - soundKnockbackPulse
+  - teleportToMob
+  - statusShift
+  - waterEmpoweredStrike
+  - freezeAbility
+  - friendlyGiantWolf
+  - areaGlow
+  - prismBurstDash
+  - invertBreathing5s
+  - netherFlames
+  - voidRiftImplosion
+  - damageImmunity
+  - creativeFlightBoost
+  - rapidFlurryStrikes
+  - launchOtherPlayer
+  - lifesteal
+  - sonicBoom
+  - tearsAbility
+
+
+# ======================================================
+# DISC SWORD → ABILITY MAPPING
+# ======================================================
+
+swords:
+  MUSIC_DISC_13:
+    name: "Music Disc 13 Sword"
+    ability: "lightningDash"
+
+  MUSIC_DISC_CAT:
+    name: "Cat Sword"
+    ability: "windDash"
+
+  MUSIC_DISC_BLOCKS:
+    name: "Blocks Sword"
+    ability: "barrierShield"
+
+  MUSIC_DISC_CHIRP:
+    name: "Chirp Sword"
+    ability: "soundKnockbackPulse"
+
+  MUSIC_DISC_FAR:
+    name: "Far Sword"
+    ability: "teleportToMob"
+
+  MUSIC_DISC_MALL:
+    name: "Mall Sword"
+    ability: "statusShift"
+
+  MUSIC_DISC_MELLOHI:
+    name: "Mellohi Sword"
+    ability: "waterEmpoweredStrike"
+
+  MUSIC_DISC_STAL:
+    name: "Stal Sword"
+    ability: "freezeAbility"
+
+  MUSIC_DISC_STRAD:
+    name: "Strad Sword"
+    ability: "friendlyGiantWolf"
+
+  MUSIC_DISC_WARD:
+    name: "Ward Sword"
+    ability: "areaGlow"
+
+  MUSIC_DISC_11:
+    name: "11 Sword"
+    ability: "prismBurstDash"
+
+  MUSIC_DISC_WAIT:
+    name: "Wait Sword"
+    ability: "invertBreathing5s"
+
+  MUSIC_DISC_PIGSTEP:
+    name: "Pigstep Sword"
+    ability: "netherFlames"
+
+  MUSIC_DISC_OTHERSIDE:
+    name: "Otherside Sword"
+    ability: "voidRiftImplosion"
+
+  MUSIC_DISC_RELIC:
+    name: "Relic Sword"
+    ability: "damageImmunity"
+
+  MUSIC_DISC_CREATOR:
+    name: "Creator Sword"
+    ability: "creativeFlightBoost"
+
+  MUSIC_DISC_CREATOR_MUSIC_BOX:
+    name: "Creator Music Box Sword"
+    ability: "rapidFlurryStrikes"
+
+  MUSIC_DISC_PRECIPICE:
+    name: "Precipice Sword"
+    ability: "launchOtherPlayer"
+
+  MUSIC_DISC_LAVA_CHICKEN:
+    name: "Lava Chicken Sword"
+    ability: "lifesteal"
+
+  MUSIC_DISC_5:
+    name: "Disc 5 Sword"
+    ability: "sonicBoom"
+
+  MUSIC_DISC_TEARS:
+    name: "Tears Sword"
+    ability: "tearsAbility"
+
+
+# ======================================================
+# DISCORD LOGGING
+# ======================================================
+discord:
+  wolf_webhook: "PUT_YOUR_WEBHOOK_URL_HERE"

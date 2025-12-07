@@ -1,0 +1,29 @@
+name: DiscSwordPlugin
+version: '7.1'
+main: me.cheese.discsword.DiscSwordPlugin
+api-version: '1.21'
+prefix: DiscoSMP Swords
+authors: [ outerspacepugyt ]
+description: Disc-based sword abilities + Guardian Wolf RPG companion
+website: coffeepixel.net
+
+commands:
+  discsword:
+    description: Main DiscSword command with subcommands
+    usage: "/<command> <reload|give|list|getall|debug|menu|wolf|toggletpwolf|autotpswitch>"
+    aliases: [ds]
+    permission: discsword.player
+    permission-message: "§cYou do not have permission to use this command."
+
+permissions:
+  discsword.admin:
+    description: Allows admin DiscSword commands (reload, give, getall, menu, list, debug)
+    default: op
+
+  discsword.player:
+    description: Allows /discsword wolf and /discsword toggletpwolf
+    default: true
+
+  discsword.cooldown.bypass:
+    description: Allows bypassing all DiscSword ability cooldowns
+    default: op
